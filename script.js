@@ -13,7 +13,8 @@ function loadpage(e){
     $("#menu a.active").removeClass("active");
     $(this).abcClass("active");
    
-    $("#contaent").load("about.html");
+    var href = $(this).attr("href");
+    $("#contaent").load(href);
 
 }
 
